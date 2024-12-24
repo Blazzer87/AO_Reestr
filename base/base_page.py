@@ -7,10 +7,10 @@ class BasePage:
 
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 4, poll_frequency=1) # пул фрикуенси для оценки как часто будет опрос старницы на выполненеи условия
+        self.wait = WebDriverWait(driver, 10, poll_frequency=1)         # пул фрикуенси для оценки как часто будет опрос старницы на выполненеи условия
 
     def open(self):
-        self.driver.get(self.Page_Url)
+        self.driver.get(self.PAGE_URL)
 
     def is_opened(self):
-        self.wait.until(EC.url_to_be(self.Page_Url))
+        self.wait.until(EC.url_to_be(self.PAGE_URL))
