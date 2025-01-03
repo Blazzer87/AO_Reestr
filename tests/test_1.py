@@ -2,7 +2,7 @@ from base.base_test import BaseTest
 import allure
 import pytest
 
-@allure.feature("Тест авторизации по паролю")
+@allure.feature("Тест авторизации по телефону")
 class TestAuthorizationByPhone(BaseTest):
 
     @allure.title("Авторизация по номеру телефона и паролю")

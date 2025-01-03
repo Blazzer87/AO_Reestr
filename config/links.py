@@ -2,7 +2,7 @@
 
 class Links:
 
-    HOST = "https://localhost"
+    HOST = "https://hello.aoreestr.ru"
 
     LOGIN_PAGE_URL = f"{HOST}"
     RECOVERY_PASSWORD_PAGE_URL = f"{HOST}/password-recovery"

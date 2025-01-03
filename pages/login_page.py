@@ -34,8 +34,8 @@ class LoginPage(BasePage):
             password_field.send_keys(password)
 
     @allure.step("Нажать кнопку Войти")
-    def click_submit (self, submit_button):
-        self.wait.until(EC.element_to_be_clickable(submit_button)).click()
+    def click_submit (self, submit_button_locator):
+        self.wait.until(EC.element_to_be_clickable(submit_button_locator)).click()
 
     @allure.step("Нажать Войти через ЦПГ")
     def enter_by_cpg (self, cpg_button_locator):
